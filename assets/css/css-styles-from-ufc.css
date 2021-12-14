@@ -1,0 +1,7 @@
+.card-wrapper {
+    --scale-size: 1.4;
+    --scale-shift: 0;
+    --scale-shift-negative: 0;
+}
+/* scales image when hovered over */
+/* want to implement somewhere to see how it works */
