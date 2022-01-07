@@ -24,6 +24,12 @@
 .ui-menu-color-resume{
     background-color: #9b59b6;
 }
+.ui-menu-color-github{
+    background-color: #a82d0e;
+}
+.ui-menu-color-interests{
+    background-color: #89d60c;
+}
 .ui-menu-color-contact{
     background-color: #3498db;
 }
@@ -347,4 +353,8 @@ button[type="submit"] {
         min-height: 240px;
         max-width: 50%;
     } 
+}
+/*--------------------------------------------Map*/
+div#map {
+    min-height: 360px;
 }
