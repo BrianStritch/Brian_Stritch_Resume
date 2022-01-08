@@ -358,3 +358,9 @@ button[type="submit"] {
 div#map {
     min-height: 360px;
 }
+
+/*--------------------------------------------gif*/
+.gif{
+    width: 60%;
+    height: 40%;
+}
