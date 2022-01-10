@@ -11,10 +11,11 @@ function sendMail(contactForm){
         },
         function (error){
             console.log('ERROR', error);
-        });
-        document.getElementById('fullname').innerText() = '';
-        document.getElementById('emailaddress').innerText('') = '';
-        document.getElementById('projectsummary').innerText('') = '';
-        return false;
+        });        
+    document.getElementById('fullname').innerText() = '';
+    document.getElementById('emailaddress').innerText('') = '';
+    document.getElementById('projectsummary').innerText('') = '';      
+        
+    return false;
 
 }
