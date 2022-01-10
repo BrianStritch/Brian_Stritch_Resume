@@ -62,7 +62,11 @@ function fetchGitHubInformation(event){
         },function(errorResponse){
             if(errorResponse.status === 404){
                 $('#gh-user-data').html(`<h2>No ifo found for user ${username}.</h2>`)
-            }else{
+            }else if(errorResponse.status === 403 ){
+                var resetTime = new Date(errorResponse.getResponseHeader('x-RateLimit-Reset') *1000);
+                $('#gh-user-data').html(`<h4>Too many requests, Please wait until ${resetTime.toLocaleTimeString()}</h4>`)
+            }else
+                {
                 console.log(errorResponse);
                 $('#gh-user-data').html(
                     `<h2> Error : ${errorResponse.responseJSON.message}</h2>`
